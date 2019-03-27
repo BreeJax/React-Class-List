@@ -6,7 +6,7 @@ class List extends Component {
     this.state = {}
   }
   render() {
-    return <li>{this.props.inputsubmitted}</li>
+    return <li onClick={() => this.props.handleDelete(this.props.id)} key={this.props.id}>{this.props.inputsubmitted}</li>
   }
 }
 
